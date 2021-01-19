@@ -48,6 +48,14 @@
           </div>
         </div>
       </div>
+      <div id = "hemisphere_image_urls">
+        {% for hemisphere in mars.hemisphere_image_urls %}
+          {% for key, value in hemisphere.items() %}
+            <div>Key: {{key }}</div>
+            <div>Value: {{value}}</div>
+          {% endfor %}
+        {% endfor %}
+      </div>
     </div>
   </body>
 </html>
